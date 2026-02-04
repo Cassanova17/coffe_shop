@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parewa Coffee - Taste the Excellence</title>
+    <meta name="description" content="Parewa Coffee - Coffee shop premium dengan kopi terbaik dan suasana nyaman">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Parewa Coffee</h1>
+                        <p class="tagline">Taste the Excellence</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">Tentang</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#gallery" class="nav-link">Galeri</a>
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#home" class="nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" class="nav-link" onclick="closeMobileMenu()">Tentang</a>
+                <a href="#menu" class="nav-link" onclick="closeMobileMenu()">Menu</a>
+                <a href="#gallery" class="nav-link" onclick="closeMobileMenu()">Galeri</a>
+                <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Kontak</a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-whatsapp mobile">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" id="heroBg">
+            <!-- Background slides will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fas fa-sparkles"></i>
+                        Premium Coffee Experience
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Parewa Coffee</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Nikmati secangkir kopi premium dengan suasana yang nyaman dan pelayanan terbaik di pusat kota
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">
+                            Lihat Menu
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-whatsapp"></i>
+                            Chat WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-value">30+</div>
+                            <div class="stat-label">Menu Pilihan</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Pelanggan Puas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10</div>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4.3</div>
+                            <div class="stat-label">Rating GMaps</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Tentang Kami</div>
+                <h2>
+                    Selamat Datang di 
+                    <span class="gradient-text">Parewa Coffee</span>
+                </h2>
+                <p>Tempat di mana setiap cangkir menceritakan kisah kualitas dan dedikasi</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Parewa Coffee hadir dengan visi untuk memberikan pengalaman kopi terbaik bagi para pecinta kopi di Indonesia. Kami percaya bahwa kopi yang baik bermula dari biji kopi pilihan yang diproses dengan penuh dedikasi.
+                    </p>
+                    <p>
+                        Setiap cangkir kopi yang kami sajikan adalah hasil kerjasama langsung dengan petani kopi lokal terbaik, memastikan kualitas yang konsisten dan mendukung ekonomi petani lokal.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3>Kopi Premium</h3>
+                            <p>Biji kopi pilihan dari petani lokal terbaik</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>Menu Beragam</h3>
+                            <p>Pilihan menu kopi, non-kopi, dan snack lezat</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Buka Setiap Hari</h3>
+                            <p>Senin - Minggu: 08:00 - 22:00 WIB</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Pelayanan Ramah</h3>
+                            <p>Staf profesional dan pelayanan terbaik</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-card">
+                        <i class="fas fa-coffee about-card-icon"></i>
+                        <div class="about-card-number">10</div>
+                        <div class="about-card-text">Tahun Melayani</div>
+                        <div class="about-card-subtext">Dengan Sepenuh Hati</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Menu Kami</div>
+                <h2>
+                    Pilihan Menu 
+                    <span class="gradient-text">Terbaik</span>
+                </h2>
+                <p>Temukan menu favoritmu dengan kualitas terbaik dan harga yang terjangkau</p>
+            </div>
+            
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="coffee" onclick="switchMenuTab('coffee')">
+                    <i class="fas fa-coffee"></i>
+                    Coffee
+                </button>
+                <button class="menu-tab" data-tab="noncoffee" onclick="switchMenuTab('noncoffee')">
+                    <i class="fas fa-wine-glass"></i>
+                    Non-Coffee
+                </button>
+                <button class="menu-tab" data-tab="snacks" onclick="switchMenuTab('snacks')">
+                    <i class="fas fa-cookie"></i>
+                    Snacks
+                </button>
+            </div>
+            
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Galeri</div>
+                <h2>
+                    Momen 
+                    <span class="gradient-text">Indah</span>
+                </h2>
+                <p>Intip suasana dan momen-momen indah di Parewa Coffee</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openGalleryImage(0)">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600" alt="Gallery 1">
+                    <div class="gallery-overlay">
+                        <button class="btn-view">
+                            <i class="fas fa-play"></i>
+                            Lihat
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openGalleryImage(1)">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Gallery 2">
+                    <div class="gallery-overlay">
+                        <button class="btn-view">
+                            <i class="fas fa-play"></i>
+                            Lihat
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openGalleryImage(2)">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600" alt="Gallery 3">
+                    <div class="gallery-overlay">
+                        <button class="btn-view">
+                            <i class="fas fa-play"></i>
+                            Lihat
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openGalleryImage(3)">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600" alt="Gallery 4">
+                    <div class="gallery-overlay">
+                        <button class="btn-view">
+                            <i class="fas fa-play"></i>
+                            Lihat
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openGalleryImage(4)">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=600" alt="Gallery 5">
+                    <div class="gallery-overlay">
+                        <button class="btn-view">
+                            <i class="fas fa-play"></i>
+                            Lihat
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openGalleryImage(5)">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600" alt="Gallery 6">
+                    <div class="gallery-overlay">
+                        <button class="btn-view">
+                            <i class="fas fa-play"></i>
+                            Lihat
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Kontak</div>
+                <h2>
+                    Hubungi 
+                    <span class="gradient-text">Kami</span>
+                </h2>
+                <p>Kami siap melayani Anda dengan sepenuh hati</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Lokasi</h3>
+                            <p>Jl. Contoh No. 123, Kota Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Minggu: 08:00 - 22:00 WIB</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <div class="social-card">
+                        <h3>Ikuti Kami</h3>
+                        <p>Dapatkan update terbaru dan promo spesial</p>
+                        
+                        <div class="social-buttons">
+                            <a href="https://instagram.com/parewacoffee" target="_blank" class="btn-instagram">
+                                <i class="fab fa-instagram"></i>
+                                @parewacoffee
+                            </a>
+                            
+                            <a href="https://tiktok.com/@parewacoffee" target="_blank" class="btn-tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                @parewacoffee
+                            </a>
+                            
+                            <a href="https://wa.me/6281234567890" target="_blank" class="btn-whatsapp-full">
+                                <i class="fab fa-whatsapp"></i>
+                                Chat WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <p>
+                            <i class="fas fa-sparkles"></i>
+                            Dapatkan diskon 10% untuk pemesanan pertama melalui WhatsApp!
+                        </p>
+                        <a href="https://wa.me/6281234567890?text=Halo, saya mau klaim diskon 10% untuk pemesanan pertama" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-sparkles"></i>
+                            Klaim Diskon Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Parewa Coffee</h3>
+                            <p class="tagline">Taste the Excellence</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Menyajikan kopi premium dengan kualitas terbaik dan pelayanan sepenuh hati sejak 2019.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/parewacoffee" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@parewacoffee" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/6281234567890" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#menu" onclick="switchMenuTab('coffee')">Coffee</a></li>
+                        <li><a href="#menu" onclick="switchMenuTab('noncoffee')">Non-Coffee</a></li>
+                        <li><a href="#menu" onclick="switchMenuTab('snacks')">Snacks</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Parewa Coffee. All rights reserved.</p>
+                <p>Dibuat dengan <i class="fas fa-heart"></i> untuk pecinta kopi Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Gallery Modal -->
+    <div class="modal" id="galleryModal" onclick="closeGalleryModal()">
+        <button class="modal-close" onclick="closeGalleryModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="Gallery Image" id="galleryModalImage">
+    </div>
+
+    <!-- Image Preview Modal for Menu -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="image-modal-close">&times;</span>
+        <img class="image-modal-content" id="menuModalImage" alt="">
+        <div class="image-modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
