@@ -92,27 +92,35 @@ function closeImageModal() {
 // ============================
 const menuData = {
     coffee: [
-        { name: 'Cappuccino', price: 'Rp 35.000', description: 'Espresso dengan susu steamed dan foam yang creamy', popular: true, image: 'assets/images/menu/cappuccino.jpg' },
-        { name: 'Americano', price: 'Rp 28.000', description: 'Espresso dengan air panas yang nikmat', popular: false, image: 'assets/images/menu/americano.jpg' },
-        { name: 'Espresso', price: 'Rp 25.000', description: 'Kopi murni yang kuat dan rich', popular: false, image: 'assets/images/menu/espresso.jpg' },
-        { name: 'Mocha', price: 'Rp 40.000', description: 'Cokelat belgia dengan espresso dan susu', popular: true, image: 'assets/images/menu/mocha.jpg' },
-        { name: 'Macchiato', price: 'Rp 32.000', description: 'Espresso dengan sedikit foam susu', popular: false, image: 'assets/images/menu/macchiato.jpg' },
+        { name: 'Cappuccino', price: 'Rp 35.000', description: 'Espresso dengan susu steamed dan foam yang creamy', popular: true, image: 'assets/images/menu/coffee/cappuccino.jpg' },
+        { name: 'Americano', price: 'Rp 28.000', description: 'Espresso dengan air panas yang nikmat', popular: false, image: 'assets/images/menu/coffee/americano.jpg' },
+        { name: 'Espresso', price: 'Rp 25.000', description: 'Kopi murni yang kuat dan rich', popular: false, image: 'assets/images/menu/coffee/espresso.jpg' },
+        { name: 'Mocha', price: 'Rp 40.000', description: 'Cokelat belgia dengan espresso dan susu', popular: true, image: 'assets/images/menu/coffee/mocha.jpg' },
+        { name: 'Macchiato', price: 'Rp 32.000', description: 'Espresso dengan sedikit foam susu', popular: false, image: 'assets/images/menu/coffee/macchiato.jpg' },
     ],
     noncoffee: [
-        { name: 'Matcha Latte', price: 'Rp 42.000', description: 'Matcha premium dari Jepang dengan susu creamy', popular: true, image: 'assets/images/menu/matcha_latte.jpg' },
-        { name: 'Chocolate Milk', price: 'Rp 35.000', description: 'Cokelat hangat dengan marshmallow', popular: false, image: 'assets/images/menu/chocolate_milk.jpg' },
-        { name: 'Thai Tea', price: 'Rp 32.000', description: 'Teh Thailand otentik yang creamy', popular: true, image: 'assets/images/menu/thai_tea.jpg' },
-        { name: 'Lemon Tea', price: 'Rp 28.000', description: 'Teh segar dengan lemon asli', popular: false, image: 'assets/images/menu/lemon_tea.jpg' },
-        { name: 'Orange Juice', price: 'Rp 35.000', description: 'Jus jeruk segar dari buah asli', popular: false, image: 'assets/images/menu/orange_juice.jpg' },
-        { name: 'Avocado Juice', price: 'Rp 40.000', description: 'Jus alpukat dengan susu cokelat', popular: true, image: 'assets/images/menu/avocado_juice.jpg' },
+        { name: 'Matcha Latte', price: 'Rp 42.000', description: 'Matcha premium dari Jepang dengan susu creamy', popular: true, image: 'assets/images/menu/non-coffee/matcha_latte.jpg' },
+        { name: 'Chocolate Milk', price: 'Rp 35.000', description: 'Cokelat hangat dengan marshmallow', popular: false, image: 'assets/images/menu/non-coffee/chocolate_milk.jpg' },
+        { name: 'Thai Tea', price: 'Rp 32.000', description: 'Teh Thailand otentik yang creamy', popular: true, image: 'assets/images/menu/non-coffee/thai_tea.jpg' },
+        { name: 'Lemon Tea', price: 'Rp 28.000', description: 'Teh segar dengan lemon asli', popular: false, image: 'assets/images/menu/non-coffee/lemon_tea.jpg' },
+        { name: 'Orange Juice', price: 'Rp 35.000', description: 'Jus jeruk segar dari buah asli', popular: false, image: 'assets/images/menu/non-coffee/orange_juice.jpg' },
+        { name: 'Avocado Juice', price: 'Rp 40.000', description: 'Jus alpukat dengan susu cokelat', popular: true, image: 'assets/images/menu/non-coffee/avocado_juice.jpg' },
+    ],
+    foods: [
+        { name: 'Ayam Geprek', price: 'Rp 36.000', description: 'Ayam goreng renyah dengan sambal pedas', popular: true, image: 'assets/images/menu/foods/ayam_geprek.jpg' },
+        { name: 'Chicken Katsu', price: 'Rp 38.000', description: 'Daging ayam katsu dengan saus spesial', popular: false, image: 'assets/images/menu/foods/chicken-katsu.jpg' },
+        { name: 'Mie Goreng', price: 'Rp 23.000', description: 'Mie goreng dengan telur dan sayuran', popular: true, image: 'assets/images/menu/foods/mie-goreng.jpg' },
+        { name: 'Mie Rebus', price: 'Rp 23.000', description: 'Mie rebus dengan kuah kaldu lezat', popular: false, image: 'assets/images/menu/foods/mie-rebus.jpg' },
+        { name: 'Nasi Goreng', price: 'Rp 36.000', description: 'Nasi goreng dengan telur dan bumbu spesial', popular: false, image: 'assets/images/menu/foods/nasi-goreng.jpg' },
+        { name: 'Nasi Ayam Cabe Hijau', price: 'Rp 36.000', description: 'Nasi dengan ayam bakar dan sambal hijau', popular: true, image: 'assets/images/menu/foods/ayam_cabe_hijau.jpg' },
     ],
     snacks: [
-        { name: 'Croissant', price: 'Rp 25.000', description: 'French pastry yang renyah dan buttery', popular: true, image: 'assets/images/menu/croissant.jpg' },
-        { name: 'Cheesecake', price: 'Rp 45.000', description: 'Cheesecake New York yang creamy', popular: true, image: 'assets/images/menu/cheesecake.jpg' },
-        { name: 'Brownies', price: 'Rp 30.000', description: 'Brownies cokelat yang lembut dan fudgy', popular: false, image: 'assets/images/menu/brownies.jpg' },
-        { name: 'Sandwich', price: 'Rp 40.000', description: 'Club sandwich dengan isian lengkap', popular: false, image: 'assets/images/menu/sandwich.jpg' },
-        { name: 'French Fries', price: 'Rp 28.000', description: 'Kentang goreng crispy dengan bumbu spesial', popular: false, image: 'assets/images/menu/french_fries.jpg' },
-        { name: 'Donut', price: 'Rp 22.000', description: 'Donut lembut dengan topping berbagai rasa', popular: false, image: 'assets/images/menu/donut.jpg' },
+        { name: 'Croissant', price: 'Rp 25.000', description: 'French pastry yang renyah dan buttery', popular: true, image: 'assets/images/menu/snacks/croissant.jpg' },
+        { name: 'Cheesecake', price: 'Rp 45.000', description: 'Cheesecake New York yang creamy', popular: true, image: 'assets/images/menu/snacks/cheesecake.jpg' },
+        { name: 'Brownies', price: 'Rp 30.000', description: 'Brownies cokelat yang lembut dan fudgy', popular: false, image: 'assets/images/menu/snacks/brownies.jpg' },
+        { name: 'Sandwich', price: 'Rp 40.000', description: 'Club sandwich dengan isian lengkap', popular: false, image: 'assets/images/menu/snacks/sandwich.jpg' },
+        { name: 'French Fries', price: 'Rp 28.000', description: 'Kentang goreng crispy dengan bumbu spesial', popular: false, image: 'assets/images/menu/snacks/french_fries.jpg' },
+        { name: 'Donut', price: 'Rp 22.000', description: 'Donut lembut dengan topping berbagai rasa', popular: false, image: 'assets/images/menu/snacks/donut.jpg' },
     ]
 };
 
